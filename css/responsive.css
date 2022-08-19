@@ -1,0 +1,18 @@
+@media (max-width:800px) {
+
+    .home-banner {
+        padding-top: 120px;
+    }
+}
+
+@media (max-width:480px) {
+    .home-ban-head {
+        font-size: 40px;
+    }
+    .home-ban-text {
+        font-size: 17px;
+    }
+    .home-banner {
+        padding-top: 100px;
+    }
+}

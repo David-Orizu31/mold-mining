@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Mold-Mining Admin Dashboard</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    
+<link rel="stylesheet" href="assets/vendors/iconly/bold.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/custom-styles.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <script src="../js/font-awesome.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+    <div class="sidebar-header">
+        <div class="d-flex justify-content-between">
+            <div class="logo">
+                <a href="index.html" class="text-white">Mold-Mining</a>
+            </div>
+            <div class="toggler">
+                <a href="#" class="sidebar-hide d-xl-none d-block text-white"><i class="bi bi-x bi-middle"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-menu">
+        <ul class="menu">
+            <li class="sidebar-title">Menu</li>
+            
+            <li
+                class="sidebar-item">
+                <a href="index.html" class='sidebar-link'>
+                    <i class="bi bi-grid-fill"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li
+            class="sidebar-item">
+            <a href="plans.html" class='sidebar-link'>
+                <i class="bi bi-list-check" aria-hidden="true"></i>
+                <span>Plans</span>
+            </a>
+        </li>
+
+        <li
+        class="sidebar-item">
+        <a href="transactions.html" class='sidebar-link'>
+            <i class="bi bi-clock-history" aria-hidden="true"></i>
+            <span>Transactions</span>
+        </a>
+    </li>
+
+    <li
+    class="sidebar-item">
+    <a href="withdraw.html" class='sidebar-link'>
+        <i class="fa fa-skyatlas" aria-hidden="true"></i>
+        <span>Withdrawal</span>
+    </a>
+</li>
+
+<li
+class="sidebar-item">
+<a href="referral.html" class='sidebar-link'>
+    <i class="fa fa-th-list" aria-hidden="true"></i>
+    <span>Referral Rewards</span>
+</a>
+</li>
+
+<li
+class="sidebar-item">
+<a href="support.html" class='sidebar-link'>
+    <i class="bi bi-chat-dots-fill" aria-hidden="true"></i>
+    <span>Customer Support</span>
+</a>
+</li>
+
+<li
+class="sidebar-item active">
+<a href="profile.html" class='sidebar-link'>
+    <i class="iconly-boldProfile" aria-hidden="true"></i>
+    <span>Profile</span>
+</a>
+</li>
+            
+        </ul>
+    </div>
+    <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+</div>
+        </div>
+        <div id="main">
+            <header class="mb-3">
+                <div class="row">
+                    <div class="col">
+                <a href="#" class="burger-btn d-block d-xl-none text-white">
+                    <i class="bi bi-justify fs-3"></i>
+                </a> 
+            </div>
+            <div class="col text-end">
+                <div class="dropdown d-block d-xl-none text-white">
+                    <a class="drop-toggle text-white" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="iconly-boldProfile"></i>
+                </a>
+                    <div class="dropdown-menu prof-drop" aria-labelledby="triggerId">
+                        <a class="dropdown-item" href="#"><i class="iconly-boldProfile"></i> Profile</a>
+                        <a class="dropdown-item" href="#"><i class="bi bi-power" aria-hidden="true"></i> Logout</a>
+                   </div>
+            </div>
+            </div>
+            </header>
+
+            <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
+            <coingecko-coin-price-marquee-widget  coin-ids="bitcoin,ethereum,eos,ripple,litecoin,bnb-diamond,dogecoin,solana,binance-bitcoin" currency="usd" background-color="#05031a" locale="en" font-color="#ffffff"></coingecko-coin-price-marquee-widget> 
+            <br>
+<div class="page-heading">
+    <h3>Profile</h3>
+</div>
+<div class="page-content">
+    <section class="row">
+
+        <div class="card">
+            <div class="card-body">
+                <!-- Nav tabs -->
+                <ul class="nav nav-pills" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active tab-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><i class="iconly-boldProfile"></i> General Information</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link tab-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fa fa-recycle" aria-hidden="true"></i> Change Password</button>
+                  </li>
+                </ul>
+                
+                <!-- Tab panes -->
+                <div class="tab-content pt-3">
+                  <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <form action="" method="post">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label for="name" class="form-label text-white">Name</label>
+                                <input type="text" name="name" id="name" class="form-control panel-control" value="">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="username" class="form-label text-white">Username</label>
+                                <input type="text" name="username" id="username" class="form-control panel-control" value="" readonly>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="email" class="form-label text-white">Email</label>
+                                <input type="email" name="email" id="email" class="form-control panel-control" value="" readonly>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="phone" class="form-label text-white">Phone Number</label>
+                                <input type="tel" name="phone" id="phone" class="form-control panel-control" value="">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="dob" class="form-label text-white">Date of Birth</label>
+                                <input type="date" name="dob" id="dob" class="form-control panel-control" value="">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="wallet_address" class="form-label text-white">Wallet Address</label>
+                                <input type="text" name="wallet_address" id="wallet_address" class="form-control panel-control" value="">
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <button type="submit" class="btn btn-primary"><i class="bi bi-download"></i> Save</button>
+                        </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                     <form action="" method="post">
+                         <div class="row">
+                             <div class="col-md-6 form-group">
+                                 <label for="password" class="form-label text-white">New Password</label>
+                                 <input type="password" name="password" id="password" class="form-control panel-control" placeholder="Enter New Password">
+                             </div>
+                             <div class="col-md-6 form-group">
+                                <label for="password_confirmation" class="form-label text-white">Confirm New Password</label>
+                                <input type="password" name="password_confirmation" id="password_confirmation" class="form-control panel-control" placeholder="Confirm Your New Password">
+                            </div>
+                         </div>
+                         <div class="form-group mt-3">
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-recycle"></i> Reset</button>
+                        </div>
+                     </form>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+   <br>
+            <footer>
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-start">
+                        <p>2022 &copy; Mold-Mining</p>
+                    </div>
+                    <div class="float-end">
+                        <p>Created with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
+                                href="#">Digital Roah Services</a></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    
+<script src="assets/vendors/apexcharts/apexcharts.js"></script>
+<script src="assets/js/pages/dashboard.js"></script>
+
+    <script src="assets/js/mazer.js"></script>
+</body>
+
+</html>

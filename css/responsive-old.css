@@ -1,0 +1,18 @@
+@media (max-width:800px) {
+    #collapsibleNavId {
+        background-color: #024972;
+        padding: 0px 15px 15px 15px;
+    }
+
+    #collapsibleNavId .navbar-nav .nav-item .nav-link {
+        color: white;
+    }
+
+    .navbar {
+        position: fixed;
+        z-index: 9999;
+        background-color: white;
+        width: 100%;
+    }
+
+}

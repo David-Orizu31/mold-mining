@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Mold-Mining Admin Dashboard</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    
+<link rel="stylesheet" href="assets/vendors/iconly/bold.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/custom-styles.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <script src="../js/font-awesome.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+    <div class="sidebar-header">
+        <div class="d-flex justify-content-between">
+            <div class="logo">
+                <a href="index.html" class="text-white">Mold-Mining</a>
+            </div>
+            <div class="toggler">
+                <a href="#" class="sidebar-hide d-xl-none d-block text-white"><i class="bi bi-x bi-middle"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-menu">
+        <ul class="menu">
+            <li class="sidebar-title">Menu</li>
+            
+            <li
+                class="sidebar-item active ">
+                <a href="index.html" class='sidebar-link'>
+                    <i class="bi bi-grid-fill"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li
+            class="sidebar-item">
+            <a href="plans.html" class='sidebar-link'>
+                <i class="bi bi-list-check" aria-hidden="true"></i>
+                <span>Plans</span>
+            </a>
+        </li>
+
+        <li
+        class="sidebar-item">
+        <a href="transactions.html" class='sidebar-link'>
+            <i class="bi bi-clock-history" aria-hidden="true"></i>
+            <span>Transactions</span>
+        </a>
+    </li>
+
+    <li
+    class="sidebar-item">
+    <a href="withdraw.html" class='sidebar-link'>
+        <i class="fa fa-skyatlas" aria-hidden="true"></i>
+        <span>Withdrawal</span>
+    </a>
+</li>
+
+<li
+class="sidebar-item">
+<a href="referral.html" class='sidebar-link'>
+    <i class="fa fa-th-list" aria-hidden="true"></i>
+    <span>Referral Rewards</span>
+</a>
+</li>
+
+<li
+class="sidebar-item">
+<a href="support.html" class='sidebar-link'>
+    <i class="bi bi-chat-dots-fill" aria-hidden="true"></i>
+    <span>Customer Support</span>
+</a>
+</li>
+
+<li
+class="sidebar-item">
+<a href="profile.html" class='sidebar-link'>
+    <i class="iconly-boldProfile" aria-hidden="true"></i>
+    <span>Profile</span>
+</a>
+</li>
+            
+        </ul>
+    </div>
+    <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+</div>
+        </div>
+        <div id="main">
+            <header class="mb-3">
+                <div class="row">
+                    <div class="col">
+                <a href="#" class="burger-btn d-block d-xl-none text-white">
+                    <i class="bi bi-justify fs-3"></i>
+                </a> 
+            </div>
+            <div class="col text-end">
+                <div class="dropdown d-block d-xl-none text-white">
+                    <a class="drop-toggle text-white" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="iconly-boldProfile"></i>
+                </a>
+                    <div class="dropdown-menu prof-drop" aria-labelledby="triggerId">
+                        <a class="dropdown-item" href="#"><i class="iconly-boldProfile"></i> Profile</a>
+                        <a class="dropdown-item" href="#"><i class="bi bi-power" aria-hidden="true"></i> Logout</a>
+                   </div>
+            </div>
+            </div>
+            </header>
+
+            <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
+            <coingecko-coin-price-marquee-widget  coin-ids="bitcoin,ethereum,eos,ripple,litecoin,bnb-diamond,dogecoin,solana,binance-bitcoin" currency="usd" background-color="#05031a" locale="en" font-color="#ffffff"></coingecko-coin-price-marquee-widget> 
+            <br>
+<div class="page-heading">
+    <h3>Profile Statistics</h3>
+</div>
+<div class="page-content">
+    <section class="row">
+      <div class="col-lg-6 col-md-6 col-xs-12">
+         <div class="card">
+             <div class="card-body dash-card">
+                 <div class="row">
+                     <div class="col-10">
+                       <i class="fas fa-caret-up caret-icon" aria-hidden="true"></i>
+                       <span class="mx-1">Total Mined</span>
+                       <h3 class="text-white mt-3">0.00000000</h3>
+                       <span>0</span>
+                     </div>
+                     <div class="col-2 text-end">
+                       <i class="fa fa-bitcoin dash-icon-btc" aria-hidden="true"></i>
+                     </div>
+                 </div>
+                 <img src="assets/images/site-img/orange-flow-bg.png" alt="" class="img img-fluid">
+             </div>
+         </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-xs-12">
+        <div class="card">
+            <div class="card-body dash-card">
+                <div class="row">
+                    <div class="col-10">
+                      <i class="fa fa-code-fork fork-icon" aria-hidden="true"></i>
+                      <span class="mx-1">Total Referral Balance</span>
+                      <h3 class="text-white mt-3">$ 0.00</h3>
+                    </div>
+                    <div class="col-2 text-end">
+                      <i class="fa fa-usd dash-icon-usd" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <img src="assets/images/site-img/purple-flow-bg.png" alt="" class="img img-fluid">
+            </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="card">
+            <div class="card-body dash-card">
+                <h5 class="text-white">Mining Activity</h5>
+                <br>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Cryptocurrency Name</th>
+                                <th>Currency Code</th>
+                                <th>Mining Balance</th>
+                                <th>Pending Withdrawal</th>
+                                <th>Mining Duration</th>
+                                <th>Received</th>
+                                <th>Sent</th>
+                                <th>Status</th>
+                                <th>Total Balance</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">Bitcoin</td>
+                                <td>BTC</td>
+                                <td>100</td>
+                                <td>$50</td>
+                                <td>20 days</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-3 overide-width" lcw-base="USD" lcw-d-head="true" lcw-d-name="true" lcw-d-code="true" lcw-d-icon="true" lcw-color-tx="#ffffff" lcw-color-bg="#05031a" lcw-border-w="1"></div>
+        <style>
+            .overide-width {
+                width: 100% !important;
+                height: auto !important;
+            }
+        </style>
+      </div>
+
+    </section>
+</div>
+   <br>
+            <footer>
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-start">
+                        <p>2022 &copy; Mold-Mining</p>
+                    </div>
+                    <div class="float-end">
+                        <p>Created with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
+                                href="#">Digital Roah Services</a></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    
+<script src="assets/vendors/apexcharts/apexcharts.js"></script>
+<script src="assets/js/pages/dashboard.js"></script>
+
+    <script src="assets/js/mazer.js"></script>
+</body>
+
+</html>

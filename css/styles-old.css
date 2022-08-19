@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Nunito:wght@300&family=Poppins:wght@300;400&display=swap');
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Barlow', sans-serif;
+}
+
+.crypto-header {
+    background-color: #f2a900;
+    padding: 10px 15px 10px 15px;
+}
+
+.head-info {
+    color: #024972;
+    font-size: 14px;
+}
+
+.head-info.link {
+    text-decoration: none;
+}
+
+.head-info.link:hover {
+    color: #024972;
+}
+
+.btn-login {
+    color: white;
+    background-color: #024972;
+    border: 1px solid #024972;
+    border-radius: 0px;
+}
+
+.btn-sign {
+    color:  #024972;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 0px;
+}
+
+.btn-login:hover {
+    color: #024972;
+    background-color: white;
+}
+
+.btn-sign:hover {
+    color: white;
+    background-color: #024972;
+}
+
+.navbar {
+    border-bottom: 2px solid #f2a900;
+}
+
+#collapsibleNavId .navbar-nav .nav-item .nav-link {
+    text-transform: uppercase;
+    color: #024972;
+    margin-right: 20px;
+}
+
+#collapsibleNavId .navbar-nav .nav-item .nav-link:hover {
+    color: #f2a900;
+}
+
+#collapsibleNavId .navbar-nav .nav-item .nav-link.active {
+    color: #f2a900;
+}
+
+.btn-toggle {
+    color: white !important;
+    background-color: #024972;
+}
+
+.btn-log2 {
+    color: white !important;
+     background-color: #f2a900;
+     border: 1px solid #f2a900;
+     border-radius: 0px;   
+}
+
+.btn-sign2 {
+    color: #024972 !important;
+     background-color: white;
+     border: 1px solid #f2a900;
+     border-radius: 0px;   
+}
+
+.crypto-banner {
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/crypto-mining.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 500px;
+    padding-top: 150px;
+}
+
+.btn-start {
+    background-color: #f2a900;
+    color: #024972 !important;
+    border-radius: 0px;
+    border: 2px solid #f2a900;
+    margin-top: 15px;
+}
+
+section {
+    padding-top: 60px;
+}
+
+.text-gold {
+    color: #f2a900;
+}
+
+.site-text {
+    color: #113a56;
+    line-height: 1.8em;
+}
+
+.gm-why {
+    width: 200px;
+}
+
+.plans-area {
+    padding: 20px;
+    background-color: #024972;
+    border: 2px solid #f2a900;
+}
+
+.plans-area .plan-top {
+    background-color: white;
+    color: #f2a900;
+    width: 150px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.plan-amount p {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.plans-area .plan-infos {
+    background-color: white;
+    padding: 20px;
+}
+
+.plan-infos p {
+    border-bottom: 1px dashed #f2a900;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+.bold-plan {
+    font-size: 20px !important;
+}
+
+.plan-button .btn-plan {
+    background-color: #f2a900;
+    border-radius: 0px;
+}
+
+.img-testi {
+    width: 100px;
+    border-radius: 50%;
+    height: 90px;
+}
+
+.start-mining {
+    background: linear-gradient(rgba(1, 49, 88, 0.5),rgba(3, 48, 85, 0.5)), url(../img/start-mine.jpg) no-repeat center;
+    min-height: 300px;
+    padding-top: 70px;
+    background-size: cover;
+}
+
+.btn-mine-today {
+    background-color: #f2a900;
+    color: white;
+    border-radius: 0px;
+    border: 2px solid #f2a900;
+    font-weight: bold;
+}
+
+.btn-mine-today:hover {
+    background-color: transparent;
+    color: #f2a900;
+    border-radius: 0px;
+    border: 2px solid #f2a900;
+    font-weight: bold;
+}
+
+.footer-area {
+    background-color: #212122;
+    padding: 30px 0px 20px 0px;
+}
+
+.foot-text {
+    font-size: 18px;
+}
+
+.foot-links {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+.foot-links li a {
+    color: white;
+    text-decoration: none;
+    line-height: 2em;
+    font-size: 18px;
+}
+
+.foot-links li a:hover {
+    color: #f2a900;
+}
+
+.copyright {
+    font-size: 11px;
+}
+
+.foot-icons {
+    color: white;
+    text-decoration: none;
+}
+
+.foot-icons:hover {
+    color: #f2a900;
+}

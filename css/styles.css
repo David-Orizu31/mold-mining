@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Inter&family=Nunito:wght@300&family=Poppins:wght@300;400&display=swap');
+
+html,body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    background: #05031a;
+    color: #828690;
+}
+
+.navbar {
+    background: #14112e;
+    box-shadow: 3.801px 7.432px 15px 0 rgba(116, 124, 145, 0.26);
+}
+
+#collapsibleNavId .navbar-nav .nav-item .nav-link {
+    color: white;
+    margin: 0px 10px 0px 10px;
+}
+
+.toggle-nav {
+    font-size: 22px;
+}
+
+.home-banner {
+    /* background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) , url(../img/crypt-mine.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 700px; */
+    padding-top: 150px;
+}
+
+.nav-to-scroll {
+    padding-top: 20px;
+}
+
+.nav-to-scroll.scrolled {
+    background-color: #14112e !important;
+    transition: background-color 200ms linear;
+  }
+
+.btn-login {
+    color: #435ebe;
+    background-color: white;
+    margin: 0px 10px 0px 10px;
+    width: 100px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.btn-login:hover {
+    color: white;
+    background-color: transparent;
+}
+
+.home-ban-head {
+    font-size: 50px;
+}
+
+.home-ban-text {
+    font-size: 18px;
+}
+
+.home-btn {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 200px;
+    padding: 10px;
+}
+
+.estimate-earn {
+    background-color: #14112e;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.esti-header {
+    padding: 10px 25px 10px 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #435ebe;
+}
+
+.home-ban-label {
+    color: #828690;
+}
+
+.home-ban-btngr {
+    background-color: #435ebe;
+}
+
+.btn-calculate {
+    color: white;
+    background-color: #435ebe;
+    padding: 10px;
+    border: 1px solid #435ebe;
+    border-radius: 20px;
+}
+
+.btn-calculate:hover {
+    color: #435ebe;
+    background-color: white;
+}
+
+section {
+    padding-top: 50px;
+}
+
+section h2 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.text-cover {
+    box-shadow: 3.801px 12.432px 38px 0 rgba(116, 124, 145, 0.26);
+    transition: all .3s ease-in;
+}
+
+.site-text {
+    line-height: 1.8em;
+    font-size: 18px;
+}
+
+.plans-area {
+    padding: 0px 30px 30px 30px;
+    background: #435ebe;
+}
+
+.plans-area .plan-title {
+    background-color: white;
+    color: #435ebe;
+    width: 170px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.plans-info {
+    background-color: white;
+}
+
+.plans-info p {
+    color: #435ebe;
+    border-bottom: 1px dashed #435ebe;
+    padding-bottom: 10px;
+}
+
+.plans-info .last-child {
+    border-bottom: none !important;
+    padding-bottom: 0px !important;
+}
+
+.plans-btn-area .btn-start-mine{
+   color: #435ebe;
+   background-color: white;
+   border: 1px solid white;
+   border-radius: 21px;
+   padding: 10px 20px 10px 20px;
+}
+
+.plans-btn-area .btn-start-mine:hover {
+    color: white;
+    background-color: transparent;
+}
+
+.why-mine-area {
+    box-shadow: 3.801px 12.432px 15px 0 rgba(116, 124, 145, 0.26);
+    transition: all .3s ease-in;
+}
+
+.why-mine-area .why-mine-icon {
+  color: #435ebe;
+  padding-top: 12px;
+}
+
+.why-mine-area .why-mine-text h5 {
+    color: #435ebe;
+    font-weight: bold;
+}
+
+.start-mine-bg {
+    background: #14112e;
+    background-size: cover;
+    min-height: 350px;
+    border-radius: 15px;
+    padding-top: 80px;
+}
+
+.btn-start-today {
+    background-color: #435ebe;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #435ebe;
+    box-shadow: 3.801px 12.432px 15px 0 rgba(116, 124, 145, 0.26);
+    transition: all .3s ease-in;
+}
+
+.btn-start-today:hover {
+    color: #435ebe;
+    background-color: white;
+}
+
+.footer-area {
+    background: #14112e;
+    padding-top: 30px;
+}
+
+.footer-area .foot-head {
+    color: white;
+}
+
+.footer-area .foot-text {
+    color: #576979;
+    font-size: 17px;
+}
+
+.footer-area .foot-links {
+    padding-inline-start: 0px;
+    list-style-type: none;
+}
+
+.footer-area .foot-links li a {
+    text-decoration: none;
+    line-height: 2em;
+}
+
+.footer-area .foot-links li a:hover {
+    color: #435ebe;
+}
+
+.footer-area .foot-links li a .foot-icons {
+    color: #435ebe;
+}
+
+.social-links a {
+    color: #435ebe;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+}
+
+.other-banners {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(../img/btc-banner.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 350px;
+    padding-top: 150px;
+}
+
+.panel-control {
+    border-radius: 0px;
+}
+
+.btn-submit {
+    background-color: #435ebe;
+    color: white;
+    width: 200px;
+    border-radius: 21px;
+    border: 1px solid #435ebe;
+    padding: 10px;
+}
+
+.btn-submit:hover {
+    color: #435ebe;
+    background-color: transparent;
+}
+
+.privacy h5 {
+    color: #435ebe;
+}
+
+.panel-area {
+    background: #14112e;
+    border-radius: 10px;
+}
+
+.panel-footer {
+    font-size: 18px;
+}
+
+.panel-link {
+    text-decoration: none;
+    color: #435ebe;
+}
+
+.form-control {
+    background-color: transparent;
+    color: white;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    color: white;
+}
+
+.form-select {
+    background-color: transparent;
+    color: white;
+}
+
+.form-select:focus {
+    background-color: transparent;
+    color: white;
+}
+
+.form-select option {
+    background-color: #05031a;
+}
+
+.accordion-button {
+    background-color: #14112e;
+    color: white;
+    border-bottom: 1px solid #576979;
+} 
+
+.accordion-item {
+    background-color: #05031a
+} 
+
+.tab-link {
+    color: #435ebe;
+}

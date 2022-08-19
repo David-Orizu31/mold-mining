@@ -1,0 +1,125 @@
+body {
+    background: #05031a;
+    color: #828690;
+}
+
+.sidebar-wrapper {
+    background: #14112e;
+}
+
+.logo a {
+    font-size: 20px;
+}
+
+.sidebar-link {
+    color: #828690 !important;
+}
+
+.sidebar-title {
+    color: whitesmoke !important;
+}
+
+.submenu-item a{
+    color: #828690 !important;
+}
+
+h3 {
+    color: white;
+}
+
+.card {
+    background: #14112e;
+}
+
+.drop-toggle {
+    font-size: 20px;
+}
+
+.dropdown-menu {
+    background: #14112e;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #828690;
+}
+
+.prof-drop {
+    min-width: 140px;
+}
+
+.dash-card span {
+    font-size: 17px;
+}
+
+.dash-card .caret-icon {
+    color: rgb(4, 184, 4);
+    font-size: 17px;
+}
+
+.dash-card .fork-icon {
+    color: #FFAB2D;
+    font-size: 17px;
+}
+
+.dash-icon-btc {
+    color: white;
+    border-radius: 50%;
+    padding: 7px 10px 7px 10px;
+    font-size: 26px;
+    background-color: #FFAB2D;
+}
+
+.dash-icon-usd {
+    color: rgb(4, 184, 4);
+    font-size: 30px;
+}
+
+.tab-link {
+    color: #435ebe;
+    border: 1px solid #435ebe;
+    background-color: transparent;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.tab-link:hover {
+    color: white;
+    background-color: #435ebe;
+}
+
+.tab-link.active {
+    color: white;
+    background-color: #435ebe;
+}
+
+.pr-bar {
+    height: 5px;
+    background-color: #05031a;
+}
+
+.progress-green {
+    background-color: rgb(4, 184, 4);
+}
+
+.tab-pill {
+    color: white;
+}
+
+.panel-control {
+    background-color: transparent;
+    color: white;
+}
+
+.panel-control[readonly] {
+    background-color: transparent;
+    color: white;
+}
+
+.panel-control:focus {
+    background-color: transparent;
+    color: white;
+}
+
+.panel-control option {
+    background-color: #05031a;
+}

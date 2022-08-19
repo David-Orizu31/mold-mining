@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans - Mold-Mining Admin Dashboard</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    
+<link rel="stylesheet" href="assets/vendors/iconly/bold.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/custom-styles.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <script src="../js/font-awesome.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+    <div class="sidebar-header">
+        <div class="d-flex justify-content-between">
+            <div class="logo">
+                <a href="index.html" class="text-white">Mold-Mining</a>
+            </div>
+            <div class="toggler">
+                <a href="#" class="sidebar-hide d-xl-none d-block text-white"><i class="bi bi-x bi-middle"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-menu">
+        <ul class="menu">
+            <li class="sidebar-title">Menu</li>
+            
+            <li
+                class="sidebar-item">
+                <a href="index.html" class='sidebar-link'>
+                    <i class="bi bi-grid-fill"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li
+            class="sidebar-item active">
+            <a href="plans.html" class='sidebar-link'>
+                <i class="bi bi-list-check" aria-hidden="true"></i>
+                <span>Plans</span>
+            </a>
+        </li>
+
+        <li
+        class="sidebar-item">
+        <a href="transactions.html" class='sidebar-link'>
+            <i class="bi bi-clock-history" aria-hidden="true"></i>
+            <span>Transactions</span>
+        </a>
+    </li>
+
+    <li
+    class="sidebar-item">
+    <a href="withdraw.html" class='sidebar-link'>
+        <i class="fa fa-skyatlas" aria-hidden="true"></i>
+        <span>Withdrawal</span>
+    </a>
+</li>
+
+<li
+class="sidebar-item">
+<a href="referral.html" class='sidebar-link'>
+    <i class="fa fa-th-list" aria-hidden="true"></i>
+    <span>Referral Rewards</span>
+</a>
+</li>
+
+<li
+class="sidebar-item">
+<a href="support.html" class='sidebar-link'>
+    <i class="bi bi-chat-dots-fill" aria-hidden="true"></i>
+    <span>Customer Support</span>
+</a>
+</li>
+
+<li
+class="sidebar-item">
+<a href="profile.html" class='sidebar-link'>
+    <i class="iconly-boldProfile" aria-hidden="true"></i>
+    <span>Profile</span>
+</a>
+</li>
+            
+        </ul>
+    </div>
+    <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+</div>
+        </div>
+        <div id="main">
+            <header class="mb-3">
+                <div class="row">
+                    <div class="col">
+                <a href="#" class="burger-btn d-block d-xl-none text-white">
+                    <i class="bi bi-justify fs-3"></i>
+                </a> 
+            </div>
+            <div class="col text-end">
+                <div class="dropdown d-block d-xl-none text-white">
+                    <a class="drop-toggle text-white" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="iconly-boldProfile"></i>
+                </a>
+                    <div class="dropdown-menu prof-drop" aria-labelledby="triggerId">
+                        <a class="dropdown-item" href="#"><i class="iconly-boldProfile"></i> Profile</a>
+                        <a class="dropdown-item" href="#"><i class="bi bi-power" aria-hidden="true"></i> Logout</a>
+                   </div>
+            </div>
+            </div>
+            </header>
+
+            <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
+            <coingecko-coin-price-marquee-widget  coin-ids="bitcoin,ethereum,eos,ripple,litecoin,bnb-diamond,dogecoin,solana,binance-bitcoin" currency="usd" background-color="#05031a" locale="en" font-color="#ffffff"></coingecko-coin-price-marquee-widget> 
+            <br>
+<div class="page-heading">
+    <h3>Plans</h3>
+</div>
+<div class="page-content">
+<section class="row">
+    <!-- Nav tabs -->
+    <ul class="nav nav-pills" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link tab-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">All Plans</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link tab-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">My Plans</button>
+      </li>
+    </ul>
+    
+    <!-- Tab panes -->
+    <div class="tab-content mt-4">
+      <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="row">
+              <div class="col-lg-4 col-md-6 col-xs-12">
+                  <div class="card">
+                      <div class="card-body">
+                          <h5 class="text-white">Basic</h5>
+                          <h4 class="text-white">$100.00</h4>
+                          <div class="progress pr-bar">
+                              <div class="progress-bar progress-bar-animated progress-green progress-sm" role="progressbar" style="width: 0.05%;" aria-valuenow="0.05" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="pt-2 pb-4">
+                          <span>Hash Rate:</span> <span class="text-white">1 H/s</span>
+                          <br>
+                          <span>Duration:</span> <span class="text-white">3 days</span>
+                        </div>
+                        <div class="d-grid">
+                            <a href="#" class="btn btn-primary">Buy</a>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="text-white">Amateur</h5>
+                        <h4 class="text-white">$500.00</h4>
+                        <div class="progress pr-bar">
+                            <div class="progress-bar progress-bar-animated progress-green progress-sm" role="progressbar" style="width: 0.1%;" aria-valuenow="0.1" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="pt-2 pb-4">
+                        <span>Hash Rate:</span> <span class="text-white">2 H/s</span>
+                        <br>
+                        <span>Duration:</span> <span class="text-white">28 days</span>
+                      </div>
+                      <div class="d-grid">
+                          <a href="#" class="btn btn-primary">Buy</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="text-white">Senior</h5>
+                        <h4 class="text-white">$1,000.00</h4>
+                        <div class="progress pr-bar">
+                            <div class="progress-bar progress-bar-animated progress-green progress-sm" role="progressbar" style="width: 0.2%;" aria-valuenow="0.2" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="pt-2 pb-4">
+                        <span>Hash Rate:</span> <span class="text-white">4 H/s</span>
+                        <br>
+                        <span>Duration:</span> <span class="text-white">28 days</span>
+                      </div>
+                      <div class="d-grid">
+                          <a href="#" class="btn btn-primary">Buy</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="text-white">Ethusiast</h5>
+                        <h4 class="text-white">$5,000.00</h4>
+                        <div class="progress pr-bar">
+                            <div class="progress-bar progress-bar-animated progress-green progress-sm" role="progressbar" style="width: 0.5%;" aria-valuenow="0.5" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="pt-2 pb-4">
+                        <span>Hash Rate:</span> <span class="text-white">10 H/s</span>
+                        <br>
+                        <span>Duration:</span> <span class="text-white">28 days</span>
+                      </div>
+                      <div class="d-grid">
+                          <a href="#" class="btn btn-primary">Buy</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="text-white">Professional</h5>
+                        <h4 class="text-white">$10,000.00</h4>
+                        <div class="progress pr-bar">
+                            <div class="progress-bar progress-bar-animated progress-green progress-sm" role="progressbar" style="width: 1%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="pt-2 pb-4">
+                        <span>Hash Rate:</span> <span class="text-white">20 H/s</span>
+                        <br>
+                        <span>Duration:</span> <span class="text-white">30 days</span>
+                      </div>
+                      <div class="d-grid">
+                          <a href="#" class="btn btn-primary">Buy</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="text-white">Premium</h5>
+                        <h4 class="text-white">$20,000.00</h4>
+                        <div class="progress pr-bar">
+                            <div class="progress-bar progress-bar-animated progress-green progress-sm" role="progressbar" style="width: 3%;" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="pt-2 pb-4">
+                        <span>Hash Rate:</span> <span class="text-white">60 H/s</span>
+                        <br>
+                        <span>Duration:</span> <span class="text-white">28 days</span>
+                      </div>
+                      <div class="d-grid">
+                          <a href="#" class="btn btn-primary">Buy</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="text-white">Gold</h5>
+                        <h4 class="text-white">$50,000.00</h4>
+                        <div class="progress pr-bar">
+                            <div class="progress-bar progress-bar-animated progress-green progress-sm" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="pt-2 pb-4">
+                        <span>Hash Rate:</span> <span class="text-white">200 H/s</span>
+                        <br>
+                        <span>Duration:</span> <span class="text-white">30 days</span>
+                      </div>
+                      <div class="d-grid">
+                          <a href="#" class="btn btn-primary">Buy</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="text-white">Platinum</h5>
+                        <h4 class="text-white">$100,000.00</h4>
+                        <div class="progress pr-bar">
+                            <div class="progress-bar progress-bar-animated progress-green progress-sm" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="pt-2 pb-4">
+                        <span>Hash Rate:</span> <span class="text-white">600 H/s</span>
+                        <br>
+                        <span>Duration:</span> <span class="text-white">30 days</span>
+                      </div>
+                      <div class="d-grid">
+                          <a href="#" class="btn btn-primary">Buy</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="text-white">Classic Platinum</h5>
+                        <h4 class="text-white">$200,000.00</h4>
+                        <div class="progress pr-bar">
+                            <div class="progress-bar progress-bar-animated progress-green progress-sm" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="pt-2 pb-4">
+                        <span>Hash Rate:</span> <span class="text-white">1200 H/s</span>
+                        <br>
+                        <span>Duration:</span> <span class="text-white">35 days</span>
+                      </div>
+                      <div class="d-grid">
+                          <a href="#" class="btn btn-primary">Buy</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs offset-lg-5 offset-md-5" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active tab-pill" id="active-tab" data-bs-toggle="tab" data-bs-target="#active" type="button" role="tab" aria-controls="active" aria-selected="true">ACTIVE</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link tab-pill" id="unpaid-tab" data-bs-toggle="tab" data-bs-target="#unpaid" type="button" role="tab" aria-controls="unpaid" aria-selected="false">UNPAID</button>
+          </li>
+        </ul>
+        
+        <!-- Tab panes -->
+        <div class="tab-content mt-3">
+          <div class="tab-pane active" id="active" role="tabpanel" aria-labelledby="active-tab">
+              <div class="card">
+                  <div class="card-body">
+                      <div class="table-responsive">
+                          <table class="table">
+                              <thead>
+                                  <tr>
+                                      <th>#</th>
+                                      <th>Plan</th>
+                                      <th>Amount Paid</th>
+                                      <th>CUR</th>
+                                      <th>Hash Rate</th>
+                                      <th>Status</th>
+                                      <th>Date Paid</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td scope="row"></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="tab-pane" id="unpaid" role="tabpanel" aria-labelledby="unpaid-tab">
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive table-hover table-striped">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Plan</th>
+                                    <th>Amount to Pay</th>
+                                    <th>Currency to Pay in</th>
+                                    <th>Hash Rate</th>
+                                    <th>Date Requested</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row"></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</section>
+</div>
+   <br>
+            <footer>
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-start">
+                        <p>2022 &copy; Mold-Mining</p>
+                    </div>
+                    <div class="float-end">
+                        <p>Created with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
+                                href="#">Digital Roah Services</a></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    
+<script src="assets/vendors/apexcharts/apexcharts.js"></script>
+<script src="assets/js/pages/dashboard.js"></script>
+
+    <script src="assets/js/mazer.js"></script>
+</body>
+
+</html>
