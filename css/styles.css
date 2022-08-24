@@ -76,6 +76,10 @@ html,body {
     border-radius: 10px;
 }
 
+.estimate-earn .form-control:read-only {
+    background: transparent;
+}
+
 .esti-header {
     padding: 10px 25px 10px 25px;
     border-radius: 20px;

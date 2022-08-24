@@ -77,47 +77,26 @@
                       <option value="premium">Premium</option>
                       <option value="gold">Gold</option>
                       <option value="platinum">Platinum</option>
-                      <option value="classic_platinum">Classic Platinum</option>
                     </select>
                   </div>
 
                   <br>
                   <div class="form-group">
-                    <label for="hashrate" class="form-label home-ban-label">Choose A Hash Rate</label>
-                    <select name="hashrate" id="hashrate" class="form-select">
-                      <option value="1">1 H/s</option>
-                      <option value="2">2 H/s</option>
-                      <option value="4">4 H/s</option>
-                      <option value="10">10 H/s</option>
-                      <option value="20">20 H/s</option>
-                      <option value="60">60 H/s</option>
-                      <option value="200">200 H/s</option>
-                      <option value="600">600 H/s</option>
-                      <option value="1200">1,200 H/s</option>
-                    </select>
+                    <label for="daily" class="form-label home-ban-label">Daily Return (%)</label>
+                    <input type="text" name="daily" id="daily" class="form-control" value="2" readonly>
                   </div>
 
                   <br>
                   <div class="form-group">
-                    <label for="valperiod" class="form-label home-ban-label">Validity Period</label>
-                    <select name="valperiod" id="valperiod" class="form-select">
-                      <option value="3">3 days</option>
-                      <option value="28">28 days</option>
-                      <option value="28">28 days</option>
-                      <option value="28">28 days</option>
-                      <option value="30">30 days</option>
-                      <option value="28">28 days</option>
-                      <option value="30">30 days</option>
-                      <option value="30">30 days</option>
-                      <option value="35">35 days</option>
-                    </select>
+                    <label for="valperiod" class="form-label home-ban-label">Validity Period (Year)</label>
+                    <input type="text" name="valperiod" id="valperiod" class="form-control" value="1" readonly>
                   </div>
 
                   <br>
                   <div class="form-group">
                     <label for="depamount" class="form-label home-ban-label">Deposit Amount In USD</label>
                     <div class="input-group mb-3">
-                      <input type="number" class="form-control" name="depamount" min="200" placeholder="Enter Amount" aria-label="Enter Amount" aria-describedby="basic-addon2" required>
+                      <input type="number" class="form-control" name="depamount" min="20" placeholder="Enter Amount" aria-label="Enter Amount" aria-describedby="basic-addon2" required>
                       <span class="input-group-text home-ban-btngr text-white" id="basic-addon2">USD</span>
                     </div>
                   </div>
@@ -145,15 +124,22 @@
     </div>
 
     <div class="container">
-      <section class="what-crypto" data-aos="fade-in" data-aos-duration="1500">
+      <section class="what-crypto">
         <h2 class="text-center">What is Cryptocurrency Mining?</h2>
-        <div class="text-cover p-4">
-        <p class="site-text text-center">Bitcoin mining is a digital process by which new bitcoins are entered into circulation, but it is also a critical component of the maintenance and development of the blockchain ledger. It is performed using very sophisticated computers or CPUs that solve extremely complex computational math problems.</p>
+
+        <div class="row text-cover p-4 mx-1 mx-lg-0 mx-md-0" style="overflow: hidden;">
+
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1500">
+             <img src="img/what-is-crypto.jpg" alt="what-is-crypto" class="img img-fluid" width="100%">
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1500">
+        <div class="mt-3 mt-lg-0">
+        <p class="site-text">Cryptocurrency Mining is the process which Bitcoin and several other cryptocurrencies use to generate new coins and verify new transactions. It involves vast, decentralized networks of computers around the world that verify and secure blockchains – the virtual ledgers that document cryptocurrency transactions. In return for contributing their processing power, computers on the network are rewarded with new coins. It’s a virtuous circle: the miners maintain and secure the blockchain, the blockchain awards the coins, the coins provide an incentive for the miners to maintain the blockchain.</p>
       </div>
-      <br>
-      <div class="text-cover p-4">
-        <p class="site-text text-center">Cryptocurrency mining is painstaking, costly, and only sporadically rewarding. Mining rewards are paid to the miner who discovers a solution to a complex hashing puzzle first, and the probability that a participant will be the one to discover the solution is related to the portion of the total mining power on the network. You need either a GPU (graphics processing unit) or an application-specific integrated circuit (ASIC) in order to set up a mining rig.</p>
-      </div>
+    </div>
+
+    </div>
       <br>
       </section>
 
@@ -166,13 +152,13 @@
                 <span>Basic</span>
               </div>
               <div class="plans-amount py-4">
-               <h3 class="text-white">$100.00</h3>
+               <h3 class="text-white">$20 - $100</h3>
               </div>
               <div class="plans-info p-3">
-                <p>Hash Rate</p>
-                <p>1 H/s</p>
+                <p>Daily Return</p>
+                <p>2%</p>
                 <p>Duration</p>
-                <p class="last-child">3 days</p>
+                <p class="last-child">1 year</p>
               </div>
               <div class="plans-btn-area pt-4">
                  <a href="#" class="btn btn-start-mine text-uppercase">Start Mining</a>
@@ -186,13 +172,13 @@
                 <span>Amateur</span>
               </div>
               <div class="plans-amount py-4">
-               <h3 class="text-white">$500.00</h3>
+               <h3 class="text-white">$150 - $400</h3>
               </div>
               <div class="plans-info p-3">
-                <p>Hash Rate</p>
-                <p>2 H/s</p>
+                <p>Daily Return</p>
+                <p>3%</p>
                 <p>Duration</p>
-                <p class="last-child">28 days</p>
+                <p class="last-child">1 year</p>
               </div>
               <div class="plans-btn-area pt-4">
                  <a href="#" class="btn btn-start-mine text-uppercase">Start Mining</a>
@@ -206,13 +192,13 @@
                 <span>Senior</span>
               </div>
               <div class="plans-amount py-4">
-               <h3 class="text-white">$1,000.00</h3>
+               <h3 class="text-white">$450 - $900</h3>
               </div>
               <div class="plans-info p-3">
-                <p>Hash Rate</p>
-                <p>4 H/s</p>
+                <p>Daily Return</p>
+                <p>4%</p>
                 <p>Duration</p>
-                <p class="last-child">28 days</p>
+                <p class="last-child">1 year</p>
               </div>
               <div class="plans-btn-area pt-4">
                  <a href="#" class="btn btn-start-mine text-uppercase">Start Mining</a>
@@ -226,13 +212,13 @@
                 <span>Ethusiast</span>
               </div>
               <div class="plans-amount py-4">
-               <h3 class="text-white">$5,000.00</h3>
+               <h3 class="text-white">$1,000 - $5,000</h3>
               </div>
               <div class="plans-info p-3">
-                <p>Hash Rate</p>
-                <p>10 H/s</p>
+                <p>Daily Return</p>
+                <p>5%</p>
                 <p>Duration</p>
-                <p class="last-child">28 days</p>
+                <p class="last-child">1 year</p>
               </div>
               <div class="plans-btn-area pt-4">
                  <a href="#" class="btn btn-start-mine text-uppercase">Start Mining</a>
@@ -246,13 +232,13 @@
                 <span>Professional</span>
               </div>
               <div class="plans-amount py-4">
-               <h3 class="text-white">$10,000.00</h3>
+               <h3 class="text-white">$3,500 - $6,000</h3>
               </div>
               <div class="plans-info p-3">
-                <p>Hash Rate</p>
-                <p>20 H/s</p>
+                <p>Daily Return</p>
+                <p>6%</p>
                 <p>Duration</p>
-                <p class="last-child">30 days</p>
+                <p class="last-child">1 year</p>
               </div>
               <div class="plans-btn-area pt-4">
                  <a href="#" class="btn btn-start-mine text-uppercase">Start Mining</a>
@@ -266,13 +252,13 @@
                 <span>Premium</span>
               </div>
               <div class="plans-amount py-4">
-               <h3 class="text-white">$20,000.00</h3>
+               <h3 class="text-white">$6,500 - $10,000</h3>
               </div>
               <div class="plans-info p-3">
-                <p>Hash Rate</p>
-                <p>60 H/s</p>
+                <p>Daily Return</p>
+                <p>7%</p>
                 <p>Duration</p>
-                <p class="last-child">28 days</p>
+                <p class="last-child">1 year</p>
               </div>
               <div class="plans-btn-area pt-4">
                  <a href="#" class="btn btn-start-mine text-uppercase">Start Mining</a>
@@ -286,13 +272,13 @@
                 <span>Gold</span>
               </div>
               <div class="plans-amount py-4">
-               <h3 class="text-white">$50,000.00</h3>
+               <h3 class="text-white">$11,000 - $20,000</h3>
               </div>
               <div class="plans-info p-3">
-                <p>Hash Rate</p>
-                <p>200 H/s</p>
+                <p>Daily Return</p>
+                <p>8%</p>
                 <p>Duration</p>
-                <p class="last-child">30 days</p>
+                <p class="last-child">1 year</p>
               </div>
               <div class="plans-btn-area pt-4">
                  <a href="#" class="btn btn-start-mine text-uppercase">Start Mining</a>
@@ -306,13 +292,13 @@
                 <span>Platinum</span>
               </div>
               <div class="plans-amount py-4">
-               <h3 class="text-white">$100,000.00</h3>
+               <h3 class="text-white">$30,000 - $100,000</h3>
               </div>
               <div class="plans-info p-3">
-                <p>Hash Rate</p>
-                <p>600 H/s</p>
+                <p>Daily Return</p>
+                <p>9%</p>
                 <p>Duration</p>
-                <p class="last-child">30 days</p>
+                <p class="last-child">1 year</p>
               </div>
               <div class="plans-btn-area pt-4">
                  <a href="#" class="btn btn-start-mine text-uppercase">Start Mining</a>
@@ -320,25 +306,6 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 col-xs-12 pt-5">
-            <div class="plans-area" align="center" data-aos="fade-in" data-aos-duration="1500">
-              <div class="plan-title pt-0">
-                <span>Classic Platinum</span>
-              </div>
-              <div class="plans-amount py-4">
-               <h3 class="text-white">$200,000.00</h3>
-              </div>
-              <div class="plans-info p-3">
-                <p>Hash Rate</p>
-                <p>1200 H/s</p>
-                <p>Duration</p>
-                <p class="last-child">35 days</p>
-              </div>
-              <div class="plans-btn-area pt-4">
-                 <a href="#" class="btn btn-start-mine text-uppercase">Start Mining</a>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -409,7 +376,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="container" data-aos="fade-in" data-aos-duration="1500">
-              <h2 class="text-center text-lg-start text-md-start">Why Mine With Us</h2>
+              <h2 class="text-center text-lg-start text-md-start">Why Choosing Us</h2>
               <div class="why-mine-area p-3">
                 <div class="why-mine-text">
                   <h5>Enjoy peace of mind</h5>
@@ -432,8 +399,110 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 pt-3 pt-lg-0" data-aos="fade-in" data-aos-duration="1500">
-            <img src="img/crypt-vector-2.png" alt="why-min-us" class="img img-fluid">
+          <div class="col-lg-6 pt-3 pt-lg-0 mt-lg-5 mt-3" data-aos="fade-left" data-aos-duration="1500">
+            <img src="img/why-choose-mine.jpg" alt="why-min-us" class="img img-fluid" width="100%">
+          </div>
+        </div>
+      </section>
+
+      <section class="referral-area">
+        <h2 class="text-center">Members Earning Review</h2>
+
+        <div class="row">
+           <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1500">
+            <h4 class="text-center text-lg-start text-md-start text-uppercase mb-3">Referral Earnings</h4>
+            <img src="img/members-earning-review.jpg" alt="why-min-us" class="img img-fluid" width="100%">
+           </div>
+
+           <div class="col-lg-6 mt-lg-5 mt-4">
+            <div class="why-mine-area p-3" data-aos="fade-left" data-aos-duration="1600">
+              <div class="why-mine-text">
+                <h5>Level 1 - 10%</h5>
+                <p>You earn extra 10% of your level1 team members daily profit</p>
+              </div>
+            </div>
+           <br>
+            <div class="why-mine-area p-3" data-aos="fade-left" data-aos-duration="1800">
+              <div class="why-mine-text">
+                <h5>Level 2 - 5%</h5>
+                <p>You earn extra 5% of your level2 team members daily profit</p>
+              </div>
+            </div>
+            <br>
+            <div class="why-mine-area p-3" data-aos="fade-left" data-aos-duration="2000">
+              <div class="why-mine-text">
+                <h5>Level 3 - 2%</h5>
+                <p>You earn extra 2% of your level3 team members daily profit</p>
+              </div>
+            </div>
+           </div>
+        </div>
+
+      </section>
+
+      <section class="work-management">
+        <h2 class="text-center">Company Work Management</h2>
+
+        <div class="row text-cover p-4 mx-1 mx-lg-0 mx-md-0" style="overflow: hidden;">
+
+          <div class="col-lg-6 order-last order-lg-first" data-aos="fade-right" data-aos-duration="1500">
+            <div class="mt-3 mt-lg-0">
+            <p class="site-text">Our company "Mold-Mining Company has taken the mechanism to build this great company (MMC) with a high rated hash-rate to bring a solution for it's participant in the global world for benefits in cryptocurrency mining, And hold the right to only distribute daily profit as guaranteed to all our users worldwide.</p>
+          </div>
+        </div>
+
+          <div class="col-lg-6 order-first order-lg-last" data-aos="fade-left" data-aos-duration="1500">
+             <img src="img/cypto-work-management.jpg" alt="what-is-crypto" class="img img-fluid" width="100%">
+          </div>
+
+    </div>
+      </section>
+
+
+      <section class="security-area">
+        <h2 class="text-center text-lg-start text-md-start">Security</h2>
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1500">
+            <img src="img/crypto-security.jpg" alt="why-min-us" class="img img-fluid" width="100%">
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="container" data-aos="fade-in" data-aos-duration="1500">
+              <div class="why-mine-area p-3">
+                <div class="row">
+                  <div class="col-lg-2 col-md-2 col-xs-12">
+                     <div class="why-mine-icon text-center pb-3">
+                      <i class="fas fa-key fa-3x"></i>
+                     </div>
+                  </div>
+                  <div class="col-lg-10 col-md-10 col-xs-12">
+                      <div class="why-mine-text text-center text-lg-start text-md-start">
+                        <h5>Key/Seed Generation.</h5>
+                        <p>Unguessable Cryptographic keys(characters) are used in protecting against unintended actors impersonating the intended key/seed holder.</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <br>
+              <div class="why-mine-area p-3">
+                <div class="row">
+                  <div class="col-lg-2 col-md-2 col-xs-12">
+                     <div class="why-mine-icon text-center pb-3">
+                      <i class="fas fa-wallet fa-3x"></i>
+                     </div>
+                  </div>
+                  <div class="col-lg-10 col-md-10 col-xs-12">
+                      <div class="why-mine-text text-center text-lg-start text-md-start">
+                        <h5>Wallet Usage.</h5>
+                        <p>A Unique Transaction Id is generated for every transaction made for reference purposes to prevent all forms of impersonation thus protecting your wallet.</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </section>
@@ -478,7 +547,7 @@
               <ul class="foot-links">
                 <li><a href="" class="foot-text"><i class="fas fa-home foot-icons"></i> 920 Studemont St Houston Texas United States</a></li>
                 <li><a href="" class="foot-text"><i class="fa fa-envelope-o foot-icons"></i> support@mold-mining.com</a></li>
-                <li><a href="" class="foot-text"><i class="fas fa-phone foot-icons"></i> +13619777215</a></li>
+                <li><a href="" class="foot-text"><i class="fas fa-phone foot-icons"></i> +13463556088</a></li>
               </ul>
             </div>
           </div>
