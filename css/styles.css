@@ -15,7 +15,6 @@ html,body {
 
 #collapsibleNavId .navbar-nav .nav-item .nav-link {
     color: white;
-    margin: 0px 10px 0px 10px;
 }
 
 .toggle-nav {
@@ -248,6 +247,13 @@ section h2 {
 
 .other-banners {
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(../img/btc-banner.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 350px;
+    padding-top: 150px;
+}
+
+.package-banner {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)) , url(../img/investment-packages.jpg) no-repeat center;
     background-size: cover;
     min-height: 350px;
     padding-top: 150px;
