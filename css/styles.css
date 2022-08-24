@@ -253,7 +253,7 @@ section h2 {
 }
 
 .package-banner {
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)) , url(../img/investment-packages.jpg) no-repeat center;
+    background: linear-gradient(#05031ad5,#05031ae3) , url(../img/investment-packages.jpg) no-repeat center;
     background-size: cover;
     min-height: 350px;
     padding-top: 150px;
